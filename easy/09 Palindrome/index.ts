@@ -1,3 +1,4 @@
+
 function isPalindrome(x: number): boolean {
     const y = x.toString()
     console.log(y)
@@ -11,3 +12,4 @@ function isPalindrome(x: number): boolean {
 
 
 isPalindrome(101)
+
