@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "npx tsx --watch index.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1"
+  }
+}
