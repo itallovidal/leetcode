@@ -1,43 +1,50 @@
-function plusOne(digits: number[]): number[] {
-    if(digits.length === 1 && digits[0] === 9) return [1,0]
-    if(digits[digits.length - 1] != 9){
-        const last = digits[digits.length - 1]
-        digits[digits.length - 1] = last + 1
-        return digits
-    }
+function addBinary(a: string, b: string): string {
 
+    function convertBinaryToNumber(c: string): number{
+        let n = 0
 
-    const numberOfElements = digits.length
-    let i = digits.length - 1
-    let lastDigit = -1
-    while (i >= 0){
-        if(digits[i] === 9) {
-            digits.pop()
-            i--
-            if(digits.length === 0) lastDigit = 9
-            continue
+        let j = 0
+        for (let i = c.length - 1; i >= 0; i--){
+            if(c[i] !== '0') {
+                const result =  Math.floor(Math.pow(2, j))
+                n += result
+            }
+            j++
         }
-        if(digits[i] !== 9) {
-            lastDigit = digits[i]
-            digits.pop()
-            break
+
+        return n
+    }
+
+    function convertNumberToBinary(d: number): string{
+        let binary = ''
+        while(d > 0){
+            const rest = Math.floor(d % 2)
+            d  = Math.floor(d / 2)
+            if(rest === 0){
+                binary+= '0'
+            }else{
+                binary+= '1'
+            }
         }
-        i--
+
+        return binary.split('').reverse().join('')
     }
 
-    const sum = lastDigit + 1
-    digits.push( sum > 9 ? 1 : sum )
 
-    for (let i = digits.length; i < numberOfElements; i++) {
-        digits.push(0)
-    }
+    const n1 = convertBinaryToNumber(a)
+    const n2 = convertBinaryToNumber(b)
+    const sum = n1+n2
+    console.log(n1)
+    console.log(n2)
+    console.log(sum)
+    console.log('----')
 
-    if(lastDigit === 9) {
-        console.log('9 porra')
-        digits.push(0)
-    }
 
-    return digits
+    if(sum === 0) return '0'
+
+
+    return convertNumberToBinary(sum)
 }
 
-console.log(plusOne([9,9]))
+addBinary('1111', '1111')
+
