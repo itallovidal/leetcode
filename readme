@@ -1,0 +1,41 @@
+# Desafios do LeetCode e Estudos de Estruturas de Dados
+
+Bem-vindo ao repositório de desafios do LeetCode e estudos de estruturas de dados! 🎯 Este projeto foi criado para registrar a minha jornada na resolução de problemas, aprimorar minhas habilidades em algoritmos e entender melhor as estruturas de dados fundamentais.
+
+## 📜 Sobre o Repositório
+
+Este repositório contém:
+
+- **Soluções de Desafios do LeetCode**: Problemas categorizados por nível de dificuldade (Fácil, Médio e Difícil).
+- **Implementações de Estruturas de Dados**: Implementações personalizadas de estruturas como listas ligadas, pilhas, filas, árvores, grafos, e muito mais.
+
+## 🚀 Objetivos
+
+- Praticar resoluções de problemas para melhorar o raciocínio lógico.
+- Consolidar o entendimento de algoritmos e estruturas de dados.
+- Preparação para entrevistas técnicas e desafios profissionais.
+
+## 🗂 Estrutura do Repositório
+
+```plaintext
+📂 leetcode
+ ┣ 📂 easy
+ ┃ ┣ 📄 problem_name1.ts
+
+📄 README.md
+```
+
+## 📚 Tecnologias Utilizadas
+
+- **Linguagens**: Python, JavaScript, TypeScript
+- **Ferramentas**: LeetCode, Visual Studio Code
+- **Versionamento**: Git
+
+## 📋 Checklist de Progresso
+
+- [ ] Resolver ao menos 50 problemas fáceis
+- [ ] Resolver ao menos 50 problemas médios
+- [ ] Resolver ao menos 50 problemas difíceis
+
+---
+
